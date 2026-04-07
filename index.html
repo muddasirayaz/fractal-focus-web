@@ -3,65 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractal Focus | Elegant Productivity</title>
+    <title>Fractal Focus | Engineered Clarity</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #050505; color: #e5e5e5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        .fractal-glow { text-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
-        .glass-card { background: rgba(20, 20, 20, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glow { box-shadow: 0 0 80px -20px rgba(59, 130, 246, 0.4); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .fractal-gradient { background: linear-gradient(180deg, #fff 0%, #666 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="antialiased selection:bg-blue-500/30">
+<body class="antialiased">
 
-    <main class="max-w-4xl mx-auto px-6 pt-24 pb-32">
-        <div class="text-center mb-16">
-            <h1 class="text-6xl font-bold tracking-tighter fractal-glow mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
-                Fractal Focus
-            </h1>
-            <p class="text-xl text-gray-400 font-light tracking-wide italic">Elegance in Concentration.</p>
+    <nav class="flex justify-between items-center px-8 py-6 max-w-6xl mx-auto">
+        <div class="text-xl font-extrabold tracking-tighter">FF.</div>
+        <div class="space-x-8 text-xs uppercase tracking-widest text-zinc-500">
+            <a href="#features" class="hover:text-white transition">Features</a>
+            <a href="#privacy" class="hover:text-white transition">Privacy</a>
+            <a href="mailto:dr.gastrologer@gmail.com" class="hover:text-white transition">Support</a>
         </div>
+    </nav>
 
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div class="space-y-8">
-                <div class="glass-card p-6 rounded-2xl">
-                    <h3 class="text-blue-400 font-semibold mb-2 uppercase tracking-widest text-xs">The Flow Protocol</h3>
-                    <p class="text-gray-300 leading-relaxed">A refined session logic designed to eliminate distractions. Built for anyone who values deep, uninterrupted work.</p>
-                </div>
-                <div class="glass-card p-6 rounded-2xl">
-                    <h3 class="text-emerald-400 font-semibold mb-2 uppercase tracking-widest text-xs">Visual Anchors</h3>
-                    <p class="text-gray-300 leading-relaxed">Real-time fractal growth algorithms provide a calming, non-repeating visual anchor to keep your attention centered.</p>
-                </div>
-            </div>
+    <section class="max-w-6xl mx-auto px-8 pt-20 pb-32 text-center">
+        <h1 class="text-7xl md:text-8xl font-extrabold tracking-tighter fractal-gradient mb-6">
+            Master Your Focus.
+        </h1>
+        <p class="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed mb-10">
+            A high-performance productivity instrument utilizing recursive growth algorithms as visual anchors for deep work.
+        </p>
+        
+        <div class="inline-block px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-zinc-200 transition cursor-pointer">
+            Coming Soon to the App Store
+        </div>
+    </section>
 
-            <div class="relative flex justify-center">
-                <div class="w-64 h-[500px] rounded-[3rem] border-[8px] border-zinc-900 bg-black shadow-2xl overflow-hidden relative">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-8">
-                        <div class="text-4xl font-mono text-blue-500 mb-2">25:00</div>
-                        <div class="w-full h-0.5 bg-zinc-800 rounded-full mb-12">
-                            <div class="w-3/4 h-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"></div>
-                        </div>
-                        <div class="w-32 h-32 border-2 border-zinc-800 rounded-full flex items-center justify-center italic text-zinc-600 text-[10px] text-center px-4">
-                            Focus Engine Active
-                        </div>
+    <section class="max-w-6xl mx-auto px-8 mb-40">
+        <div class="relative">
+            <div class="absolute inset-0 bg-blue-600/20 blur-[120px] -z-10"></div>
+            <div class="glass rounded-3xl overflow-hidden shadow-2xl">
+                <div class="aspect-video bg-zinc-900 flex items-center justify-center text-zinc-700 italic">
+                    <img src="screenshot-main.png" alt="Fractal Focus Interface" class="w-full h-full object-cover">
                     </div>
-                </div>
             </div>
         </div>
+    </section>
 
-        <footer class="pt-12 border-t border-zinc-900 grid md:grid-cols-2 gap-8 text-sm">
-            <div>
-                <h4 class="text-white font-medium mb-4">Support & Contact</h4>
-                <p class="text-zinc-500 mb-2">For technical inquiries or feedback:</p>
-                <a href="mailto:dr.gastrologer@gmail.com" class="text-blue-500 hover:text-blue-400 transition-colors">dr.gastrologer@gmail.com</a>
-            </div>
-            <div>
-                <h4 class="text-white font-medium mb-4">Privacy & Data</h4>
-                <p class="text-zinc-500 leading-relaxed">
-                    Fractal Focus is a zero-data utility. No tracking, no data collection, no accounts. All processing is executed locally on your device.
+    <section id="features" class="max-w-6xl mx-auto px-8 grid md:grid-cols-3 gap-8 mb-40">
+        <div class="glass p-10 rounded-3xl">
+            <div class="text-blue-500 mb-4 font-mono text-sm tracking-widest">01. ALGORITHM</div>
+            <h3 class="text-2xl font-bold mb-4">Recursive Visuals</h3>
+            <p class="text-zinc-400 leading-relaxed">Real-time fractal generation provides a non-repeating visual anchor, designed to stabilize attention without being a distraction.</p>
+        </div>
+        <div class="glass p-10 rounded-3xl">
+            <div class="text-emerald-500 mb-4 font-mono text-sm tracking-widest">02. PROTOCOL</div>
+            <h3 class="text-2xl font-bold mb-4">Grace Periods</h3>
+            <p class="text-zinc-400 leading-relaxed">Protect your flow state with an intelligent 5-second buffer. No accidental session breaks—only intentional transitions.</p>
+        </div>
+        <div class="glass p-10 rounded-3xl">
+            <div class="text-purple-500 mb-4 font-mono text-sm tracking-widest">03. ARCHITECTURE</div>
+            <h3 class="text-2xl font-bold mb-4">On-Device Processing</h3>
+            <p class="text-zinc-400 leading-relaxed">Zero latency, zero tracking. The engine runs locally on your hardware for maximum performance and absolute privacy.</p>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center mb-40">
+        <div>
+            <h2 class="text-4xl font-bold mb-6 tracking-tight">Pure Utility. <br><span class="text-zinc-500">Zero Friction.</span></h2>
+            <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
+                We stripped away the gamification and the noise. What remains is a clinical-grade focus environment that respects your time and your data.
+            </p>
+            <ul class="space-y-4 text-zinc-300 font-medium">
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> No Subscriptions</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> No Account Required</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> No Data Collection</li>
+            </ul>
+        </div>
+        <div class="glass aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+            <img src="screenshot-detail.png" alt="Detail View" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <footer id="privacy" class="border-t border-zinc-900 pt-20 pb-10">
+        <div class="max-w-6xl mx-auto px-8 flex flex-col md:flex-row justify-between gap-12">
+            <div class="max-w-sm">
+                <h4 class="text-white font-bold mb-4 text-lg tracking-tighter">FF.</h4>
+                <p class="text-zinc-500 text-sm leading-relaxed">
+                    Fractal Focus is a privacy-first productivity tool. We believe your focus should be your own. All data remains on-device, encrypted and inaccessible to us.
                 </p>
             </div>
-        </footer>
-    </main>
+            <div class="flex gap-20">
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-zinc-300 mb-4">Contact</h5>
+                    <a href="mailto:dr.gastrologer@gmail.com" class="text-zinc-500 text-sm hover:text-white transition">Support Email</a>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-zinc-300 mb-4">Legal</h5>
+                    <a href="https://gist.github.com/muddasirayaz/2372a802db80ba1997f9db9d8572dd45" class="text-zinc-500 text-sm hover:text-white transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-20 text-[10px] text-zinc-700 uppercase tracking-widest">
+            © 2026 Fractal Focus. All Rights Reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
